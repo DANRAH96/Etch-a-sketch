@@ -1,0 +1,17 @@
+
+body{
+    box-sizing: border-box;
+}
+h1 {
+    color: grey;
+}
+
+.sketch-div {
+    background-color: yellow;
+}
+
+.sketch-container{
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+}
