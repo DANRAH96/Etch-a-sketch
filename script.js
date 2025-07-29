@@ -33,14 +33,18 @@ function createSketchArea(size){
         sketchContainer.appendChild(newDiv);
     }
 
-    sketchDivs = document.querySelectorAll(".sketch-div");
-    sketchDivs.forEach(div => {
-        div.addEventListener("mouseover", (e)=>{
+    sketchContainer.addEventListener("mouseover", (e)=>{
           
-          e.target.style.backgroundColor = `rgb(${255*Math.random()},${255*Math.random()},${255*Math.random()})`;
-        })
+         e.target.style.backgroundColor = `rgb(${255*Math.random()},${255*Math.random()},${255*Math.random()})`;
+         });
+    sketchDivs = document.querySelectorAll(".sketch-div");
+    // sketchDivs.forEach(div => {
+    //     div.addEventListener("mouseover", (e)=>{
+          
+    //       e.target.style.backgroundColor = `rgb(${255*Math.random()},${255*Math.random()},${255*Math.random()})`;
+    //     })
         
-    });
+    // });
 };
 
 
